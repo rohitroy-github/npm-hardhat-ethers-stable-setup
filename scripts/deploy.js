@@ -53,7 +53,6 @@ async function main() {
   console.log("- - - - - - - - - - - - - - - - - - - - -");
 }
 
-// async function verify(contractAddress, args) {
 const verify = async (contractAddress, args) => {
   console.log("Verifying contract on Etherscan \u23F3");
   try {
