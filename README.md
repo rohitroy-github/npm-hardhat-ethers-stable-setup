@@ -2,7 +2,7 @@
 
 <h4><b>This is a stable setup for the Hardhat development environment which can be used in blockchain / backend folders for React / Vite / Next projects.</b></h4>
 
-<h4><b>Dependencies Integrated :</b></h4>
+<h3><b>Dependencies Integrated :</b></h3>
 
 <ul>
     <li><b>@nomiclabs/hardhat-ethers</b>: ^2.0.4</li>
@@ -17,7 +17,7 @@
     <li><b>dotenv</b>: ^14.2.0</li>
 </ul>
 
-<h4><b>Blockchain Networks Integrated :</b></h4>
+<h3><b>Blockchain Networks Integrated :</b></h3>
 
 <ul>
     <li><b>Sepolia Testnet</b></li>
@@ -28,10 +28,10 @@
 
 <h3><b>Guide for testing on local hardhat network :</b></h3>
 
-<b>Environment variables :</b>
+<h4><b>Environment variables :</b></h4>
 
 <ul>
     <li>Create a new .env file taking reference from .env.example file inside the same.</li>
 </ul>
 
-<b>This is a helper project file for quick initialization of my required Hardhat development environment.</b>
+<b>This is a helper project file for quick initialization of my preffered Hardhat development environment.</b>
