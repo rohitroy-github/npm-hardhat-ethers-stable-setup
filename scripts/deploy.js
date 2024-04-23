@@ -26,13 +26,14 @@ async function main() {
   } else if (network.config.chainId === 80002) {
     console.log(`Deployment network: Polygon Amoy Testnet`);
     console.log("Waiting for block confirmations ... \u23F3");
-    await eVaultMain.deployTransaction.wait(3);
+    await simpleStorage.deployTransaction.wait(3);
     console.log("3 block confirmations done \u2705");
   } else if (network.config.chainId === 2710) {
     console.log(`Deployment network: Morph Testnet`);
     console.log("Waiting for block confirmations ... \u23F3");
-    await eVaultMain.deployTransaction.wait(2);
+    await simpleStorage.deployTransaction.wait(2);
     console.log("2 block confirmations done \u2705");
+    await verify(simpleStorage.address, []);
   }
 
   console.log("- - - - - - - - - - - - - - - - - - - - -");
@@ -54,7 +55,7 @@ async function main() {
 
 // async function verify(contractAddress, args) {
 const verify = async (contractAddress, args) => {
-  console.log("Verifying contract \u23F3");
+  console.log("Verifying contract on Etherscan \u23F3");
   try {
     await run("verify:verify", {
       address: contractAddress,

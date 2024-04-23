@@ -66,7 +66,21 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY,
+    apiKey: {
+      sepolia: ETHERSCAN_API_KEY,
+      morph: ETHERSCAN_API_KEY,
+    },
+    customChains: [
+      {
+        // https://docs.morphl2.io/docs/build-on-morph/build-on-morph/verify-your-smart-contracts
+        network: "morph",
+        chainId: 2710,
+        urls: {
+          apiURL: "https://explorer-api-testnet.morphl2.io/api",
+          browserURL: "https://explorer-testnet.morphl2.io",
+        },
+      },
+    ],
   },
 
   gasReporter: {
